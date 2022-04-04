@@ -1,0 +1,62 @@
+.filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.8s ease-in-out;
+}
+
+.filter-group {
+  margin-top: 20px;
+}
+
+.filter-label {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.hr {
+  margin-top: 20px;
+  border: none;
+  border-bottom: 1px solid rgb(230, 229, 229);
+}
+
+.pins-group {
+  margin-top: 20px;
+  overflow-y: scroll;
+  height: 70%;
+}
+
+.pin-item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid rgb(219, 218, 218);
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pin-item:hover {
+  background-color: rgb(238, 238, 238);
+}
+.starts-filter {
+  margin-left: auto;
+}
+
+.showModal {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hideModal {
+  opacity: 0;
+  transform: translateX(-100%);
+}
