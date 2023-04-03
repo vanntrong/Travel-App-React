@@ -1,6 +1,6 @@
 import "./card.css";
 import StarIcon from "@mui/icons-material/Star";
-import { format } from "timeago.js";
+import dayjs from "dayjs";
 
 const Card = ({ title, desc, rating, username, createdAt }) => {
   return (
@@ -15,7 +15,7 @@ const Card = ({ title, desc, rating, username, createdAt }) => {
       <span className="username">
         Create by <b>{username}</b>
       </span>
-      <span className="date">{format(createdAt)}</span>
+      <span className="date">{dayjs(createdAt).format("DD/MM/YYYY")}</span>
     </div>
   );
 };
